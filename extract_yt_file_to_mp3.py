@@ -40,8 +40,12 @@ def download_playlist(playlist_url, resolution):
 
         print("----------------------------------")
 
+playlist_url = "url_goes_here_from_yt"
+
+download_playlist(playlist_url=playlist_url, resolution="1080p")
+
 """
-    extra code to do something if needed as per the wish 
+    extra code to do something if needed as per the wish / or experimental code.
         video_path = os.path.join(playlist_name, video_filename)
         if os.path.exists(video_path):
             print(f"{video_filename} already exists")
@@ -84,8 +88,3 @@ video = VideoFileClip('filename.mp4')
 audio = video.audio
 audio.write_audiofile('filename.mp3')
 """
-
-
-playlist_url = "url_goes_here_from_yt"
-
-download_playlist(playlist_url=playlist_url, resolution="1080p")
